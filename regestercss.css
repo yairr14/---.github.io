@@ -1,0 +1,112 @@
+﻿
+/* עיצוב כללי */
+body {
+    font-family: 'Arial', sans-serif; /* מגדיר את סגנון הגופן של הטקסט */
+    background: linear-gradient(135deg, #ffe0cc, #fff6cc); /* יוצר רקע גרדיאנט בזווית של 135 מעלות */
+    color: forestgreen; /* מגדיר את צבע הטקסט ללבן */
+    margin: 0; /* מבטל שוליים חיצוניים של הדף */
+    padding: 0; /* מבטל ריווח פנימי של הדף */
+
+    text-align: center; /* ממקם את כל התוכן במרכז אופקי */
+}
+
+/* עיצוב הטופס */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* רקע לבן שקוף מעט */
+    padding: 30px; /* ריווח פנימי של 30 פיקסלים */
+    border-radius: 10px; /* פינות עגולות בקופסה */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* צללת קופסה רכה */
+    width: 100%; /* התאמה מלאה לרוחב הקונטיינר */
+    max-width: 400px; /* מגבלה על רוחב הקופסה */
+    margin: 0 auto; /* ממקם את הקונטיינר במרכז העמוד */
+}
+
+h2 {
+    text-align: center; /* ממרכז את הכותרת */
+    color: #333; /* מגדיר צבע טקסט כהה */
+}
+
+label {
+    display: block; /* הופך את התווית לבלוק (שורה נפרדת) */
+    margin-bottom: 8px; /* רווח תחתון של 8 פיקסלים */
+    color: #333; /* מגדיר צבע טקסט כהה */
+    font-weight: bold; /* מדגיש את הטקסט */
+}
+
+p {
+    display: block; /* הופך את התווית לבלוק (שורה נפרדת) */
+    margin-bottom: 8px; /* רווח תחתון של 8 פיקסלים */
+    color: #333; /* מגדיר צבע טקסט כהה */
+    font-weight: bold; /* מדגיש את הטקסט */
+}
+
+input[type="text"], input[type="password"], input[type="submit"] /* עיצוב המקום שאפשר לשם קלט */ {
+    width: 100%; /* שדות הקלט ממלאים את כל רוחב הקונטיינר */
+    padding: 10px; /* ריווח פנימי של 10 פיקסלים */
+    margin: 10px 0 20px 0; /* ריווח חיצוני מלמעלה, מלמטה ובין האלמנטים */
+    border-radius: 5px; /* פינות עגולות לשדה */
+    border: 1px solid #ccc; /* גבול אפור בהיר מסביב לשדה */
+}
+
+input[type="submit"] {
+    background-color: #2575fc; /* צבע רקע לכפתור הכחול */
+    color: white; /* צבע הטקסט של הכפתור */
+    border: none; /* מסיר גבול לכפתור */
+    cursor: pointer; /* מציין שהכפתור לחיץ */
+    transition: background-color 0.3s; /*  אחרי שאתה מעביר את העכבר זה יוצר אנימציה חלקה לשינוי צבע */
+}
+
+    input[type="submit"]:hover {
+        background-color: #6a11cb; /* משנה את צבע הרקע בכפתור כאשר הסמן עובר עליו */
+    }
+
+/* עיצוב עבור הודעות שגיאה */
+.error {
+    color: red; /* צבע אדום עבור הודעות שגיאה */
+    font-size: 0.9em; /* גודל טקסט קטן יותר עבור הודעות שגיאה */
+}
+
+/* עיצוב עבור הטקסט מעל ומתחת לטופס */
+.above-text, .below-text {
+    text-align: center; /* ממרכז את הטקסט */
+    font-size: 1.5em; /*  em=16px   גודל טקסט */
+    color: #333;
+}
+
+/* טבלה עם קישורים */
+table {
+    width: 100%;
+    text-align: center;
+}
+
+.moving-image {
+    position: relative; /* כדי לאפשר תזוזה */
+    animation: move-left-right 3s infinite; /* הפעלת האנימציה */
+    width: 200px; /* התאמת גודל התמונה */
+    height: auto;
+}
+
+@keyframes move-left-right {
+    0% {
+        left: -600px; /* התחלה */
+    }
+
+    50% {
+        left: 600px; /* תזוזה ימינה */
+    }
+
+    100% {
+        left: -600px; /* חזרה לנקודת ההתחלה */
+    }
+}
+
+
+table td {
+    padding: 10px;
+}
+
+table a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}

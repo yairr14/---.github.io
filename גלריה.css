@@ -1,0 +1,74 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* עיצוב כותרת */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* עיצוב הגלריה */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+/* עיצוב תאים בתוך הטבלה */
+td {
+    text-align: center;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+/* עיצוב כותרות התמונות */
+h_gal {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* עיצוב התמונות */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+    /* אפקט כשמעבירים את העכבר על התמונה */
+    img:hover {
+        transform: scale(1.05);
+    }
+
+/* עיצוב כל התמונה כשיש תמונות לא תואמות גודל */
+td img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+/* עיצוב הטבלה במסכים קטנים */
+@media (max-width: 768px) {
+    table {
+        width: 90%;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+}

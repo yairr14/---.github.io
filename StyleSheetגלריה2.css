@@ -1,0 +1,59 @@
+﻿#galleryPage h1 {
+    text-align: center;
+    font-size: 24px; /* קטן יותר */
+    color: #34495e;
+    margin: 10px 0;
+}
+
+#galleryPage table {
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 8px; /* הפחתת רווחים בין התאים */
+    margin: 0 auto;
+}
+
+#galleryPage td {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    padding: 6px; /* פחות פדינג */
+    height: 200px; /* גובה קטן יותר */
+    width: 30%;
+    box-sizing: border-box;
+}
+
+#galleryPage img {
+    max-width: 80%; /* הקטנה נוספת של התמונות */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* עיצוב לאלמנטים של טקסט בתוך התאים */
+#galleryPage td h_gal {
+    font-size: 16px; /* טקסט קטן יותר */
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 6px; /* פחות רווח */
+}
+
+/* מסודר בצורה טובה */
+#galleryPage table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#galleryPage td {
+    width: 30%;
+    margin-bottom: 12px; /* רווח בין התאים */
+    text-align: center;
+}
+
+    #galleryPage td img {
+        width: 90%; /* התמונות לא יחרגו מהתאים */
+        height: auto;
+    }

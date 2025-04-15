@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication5.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <link href="regestercss.css" rel="stylesheet" />
+   <title></title>
+
+ <style>
+ nav ul {
+     list-style-type: none;
+     display: flex;
+     justify-content: center;
+     margin: 0;
+     padding: 0;
+ }
+     </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+    <body style="text-align:center; margin:0 auto";>
+    
+        <table class="menu">
+          
+            <tr>
+            
+           
+            <td runat="server" id="bar1"><a href="גלריה.aspx">גלריה</a></td>
+                
+            <td runat="server" id="bar2"><a href="שאלות ותשובות.aspx">שאלות ותשובות</a></td>
+                <td runat="server" id="bar3" > <a href="מתכונים מובילים.aspx">מתכונים מוביילים</a></td>
+                <td runat="server" id="bar4" > <a href="הזמנת אוכל.aspx">הזמנת אוכל</a></td>
+                <td runat="server" id="bar5"><a href="regester.aspx">טופס רישום</a> </td>
+                <td runat="server" id="bar6"  ><a href="דף בית.aspx">דף בית</a></td>
+                <td runat="server" id="bar7"><a href="login.aspx">טופס התחברות</a></td>
+                <td runat="server" id="bar9"><a href="shihzor.aspx">עדכון סיסמא </a></td>
+                <td runat="server" id="bar10"><a href="Admin-Page.aspx">ניהול משתמשים</a>  </td>
+                <td runat="server" id="bar8"><a href="zorkesher.aspx">צור קשר</a></td>
+                <td runat="server" id="bar11"><a href="mazig.aspx">נתוני משתמש</a></td>
+                 <td runat="server" id="bar12"><a href="logout.aspx">התנתקות</a></td>
+                <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
+            </tr>
+                   
+                     
+                      
+         </table>
+       <div style="color:black" id="VisitCount" runat="server"></div>
+        <style>
+            /* עיצוב התפריט */
+/* עיצוב התפריט */
+
+.menu {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse; /* מונע רווחים מיותרים בין התאים */
+    display: flex;
+    justify-content: center; /* מרכז את התוכן */
+}
+
+.menu td {
+    display: inline-block; /* כל תא יהיה בשורה אחת */
+    text-align: center;
+}
+
+.menu td a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+
+/* אכפת להוסיף עיצוב נוסף כדי למנוע שורת שבירה */
+.menu tr {
+    display: flex;
+    justify-content: center; /* ממרכז את התוכן */
+}
+
+        </style>
+    
+        
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+              <div>
+           <a href="zorkesher.aspx">(צור קשר)</a>
+            yair.rnn@gmail.com
+כל הזכויות שמורות יאיר רונן לפניות
+
+       </div>
+</body>
+</html>

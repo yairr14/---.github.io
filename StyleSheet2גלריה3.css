@@ -1,0 +1,75 @@
+﻿menu {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse; /* מונע רווחים מיותרים בין התאים */
+}
+
+.menu td {
+    display: inline-block; /* כל תא יהיה בשורה אחת */
+    text-align: center;
+}
+
+    .menu td a {
+        text-decoration: none; /* אין קו תחתי */
+        color: #333; /* צבע רגיל */
+        font-weight: bold;
+        padding: 10px;
+        display: block;
+    }
+
+        /* מונע תוספות מסגרת על הקישורים */
+        .menu td a:hover {
+            background-color: transparent; /* אין שינוי צבע בזמן ריחוף */
+        }
+
+/* עיצוב גלריה */
+#galleryPage h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #34495e;
+    margin: 20px 0;
+}
+
+#galleryPage table {
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 10px;
+    margin: 0 auto; /* מרכז את הטבלה */
+}
+
+#galleryPage td {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    padding: 10px;
+    height: 300px;
+    width: 30%; /* רוחב אחיד לכל תא */
+    box-sizing: border-box; /* לוודא שהרוחב כולל את הריפוד */
+    margin-bottom: 15px; /* רווח בין התאים */
+}
+
+#galleryPage img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover; /* התאמת תמונה בצורה אחידה */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* עיצוב טבלה כשיש יותר מכמה תמונות */
+#galleryPage table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* מרווח שווה בין התמונות */
+}
+
+#galleryPage td {
+    width: 30%; /* רוחב אחיד לכל תא */
+    margin-bottom: 15px; /* רווח בין התאים */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

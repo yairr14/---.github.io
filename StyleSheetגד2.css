@@ -1,0 +1,56 @@
+﻿#galleryPage h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #34495e;
+    margin: 20px 0;
+}
+
+/* עיצוב טבלה */
+#galleryPage table {
+    width: 100%;
+    margin: 0 auto;
+    border-spacing: 10px;
+    table-layout: fixed; /* מונע שהעמודות ימתחו מעבר למה שצריך */
+}
+
+/* עיצוב לכל תא בגלריה */
+#galleryPage td {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    padding: 10px;
+    height: 300px;
+    width: 30%; /* התאמת רוחב אחיד לכל תא */
+    box-sizing: border-box; /* לוודא שהרוחב כולל padding */
+}
+
+/* עיצוב התמונות */
+#galleryPage img {
+    max-width: 100%;
+    height: auto; /* שומר על פרופורציות התמונות */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* תצוגת גריד לתמונות, מסודרות באופן אחיד */
+#galleryPage table {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* התאמת הגודל לכל מכשיר */
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+#galleryPage td {
+    width: 100%; /* ככה התמונות יהיו ממולאות בתאים */
+    margin-bottom: 15px;
+}
+
+    /* אם צריך לסדר גם את כותרות התמונות בתוך התאים */
+    #galleryPage td h_gal {
+        font-size: 20px;
+        font-weight: bold;
+        color: #34495e;
+        margin-bottom: 10px;
+    }

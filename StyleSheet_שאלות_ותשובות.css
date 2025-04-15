@@ -1,0 +1,103 @@
+﻿.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* שתי עמודות בגודל שווה */
+    gap: 20px; /* רווח בין העמודות */
+    max-width: 1200px;
+    margin: 0 auto;
+    direction: rtl
+}
+
+.content, .sidebar {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #28a745; /* ירוק */
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    color: #666;
+    text-align: center;
+}
+
+.vertical-line {
+    width: 2px;
+    height: auto;
+    background-color: #ddd;
+    margin: 0 30px;
+}
+
+.food-options {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+    .food-options label {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .food-options input[type="checkbox"] {
+        margin-left: 10px;
+    }
+
+.sidebar {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+    .sidebar h2 {
+        color: #28a745;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .sidebar p {
+        color: #555;
+        line-height: 1.6;
+    }
+
+    .sidebar h3 {
+        color: #333;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+.reviews {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+    .reviews blockquote {
+        font-style: italic;
+        margin: 20px 0;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-left: 5px solid #28a745;
+        color: #555;
+    }
+
+        .reviews blockquote p {
+            margin: 0;
+        }
+strong {
+    color: #555; /* אפור כהה */
+    font-weight: bold;
+}
